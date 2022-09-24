@@ -2,7 +2,7 @@ export default {
   async fetch(request, env) {
     let url = new URL(request.url);
     if (url.pathname.startsWith('/')) {
-      url.hostname = 'sparkling-boat-8c2a.teroku2.workers.dev'
+      url.hostname = 'sp.dev'
       let new_request = new Request(url, request);
       return fetch(new_request);
     }
